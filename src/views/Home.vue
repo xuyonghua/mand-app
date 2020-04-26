@@ -6,13 +6,17 @@
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+  // @ is an alias to /src
+  import HelloWorld from '@/components/HelloWorld.vue'
 
-export default {
-  name: 'Home',
-  components: {
-    HelloWorld
+  export default {
+    name: 'Home',
+    components: {
+      HelloWorld
+    },
+    created () {
+      // 使用全局变量
+      // console.log(process.env.API_URL)
+    }
   }
-}
 </script>
